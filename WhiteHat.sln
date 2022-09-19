@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteHat.Bot", "WhiteHat.Bot\WhiteHat.Bot.csproj", "{62AF5709-71A1-47FD-A380-B007BAC7B3EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteHat.API", "WhiteHat.API\WhiteHat.API.csproj", "{576591F1-EC44-463A-930D-C4750C582440}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62AF5709-71A1-47FD-A380-B007BAC7B3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62AF5709-71A1-47FD-A380-B007BAC7B3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62AF5709-71A1-47FD-A380-B007BAC7B3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62AF5709-71A1-47FD-A380-B007BAC7B3EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{576591F1-EC44-463A-930D-C4750C582440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{576591F1-EC44-463A-930D-C4750C582440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{576591F1-EC44-463A-930D-C4750C582440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{576591F1-EC44-463A-930D-C4750C582440}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABDA374C-BFB6-4AA2-8606-AE0612F29C1A}
+	EndGlobalSection
+EndGlobal
