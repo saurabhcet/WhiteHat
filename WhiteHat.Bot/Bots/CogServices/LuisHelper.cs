@@ -4,7 +4,7 @@ using Microsoft.Bot.Configuration;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace EchoBotTest.Luis
+namespace WhiteHat.Bot.CogServices
 {
     public class LuisHelper : IRecognizer
     {

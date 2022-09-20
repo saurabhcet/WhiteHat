@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.AI.Luis;
 
-namespace WhiteHat.Bot.Luis
+namespace WhiteHat.Bot.CogServices
 {
     public partial class ConversationRecongnizer : IRecognizerConvert
     {

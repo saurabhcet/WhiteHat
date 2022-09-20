@@ -3,15 +3,16 @@
 //
 // Generated with Bot Builder V4 SDK Template for Visual Studio EchoBot v4.16.0
 
-using EchoBotTest.Luis;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Bot.Builder;
+using Microsoft.Bot.Builder.Calling;
 using Microsoft.Bot.Builder.Integration.AspNet.Core;
 using Microsoft.Bot.Connector.Authentication;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WhiteHat.Bot.CogServices;
 
 namespace WhiteHat.Bot
 {
@@ -42,6 +43,7 @@ namespace WhiteHat.Bot
 
             // Create the bot as a transient. In this case the ASP Controller is expecting an IBot.
             services.AddTransient<IBot, Bots.WhiteHatBot>();
+            services.AddTransient<ICallingBot, Bots.WhiteHatBot>();           
 
             var storage = new MemoryStorage();
             // Create the User state passing in the storage layer.
