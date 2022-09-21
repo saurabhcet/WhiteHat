@@ -65,6 +65,7 @@ namespace WhiteHat.Bot.Bots
         {
             var (intent, score) = result.TopIntent();
             var replyText = string.Empty;
+            if (result.Text == null) return String.Empty;
             try
             {
                 var note = result.Text.Replace("WHITEHATBOT", "").Replace("WHITEHAT", "").Replace("WHITEHATECHOBOT","").Replace(nameof(intent), "");

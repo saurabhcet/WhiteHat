@@ -43,7 +43,11 @@ namespace WhiteHat.Bot
 
             // Create the bot as a transient. In this case the ASP Controller is expecting an IBot.
             services.AddTransient<IBot, Bots.WhiteHatBot>();
-            services.AddTransient<ICallingBot, Bots.WhiteHatBot>();           
+            CallingBotService botservice = new CallingBotService(new CallingBotServiceSettings
+            {
+                CallbackUrl = "https://simpleechobot20220918025338.azurewebsites.net/api/messages/call"
+            });
+            services.AddSingleton<ICallingBotService>(botservice);
 
             var storage = new MemoryStorage();
             // Create the User state passing in the storage layer.
